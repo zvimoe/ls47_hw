@@ -20,7 +20,7 @@ class Connection{
         public function insert($quary,$execute){
            $pdo = new PDO($this->dsn,$this->user,$this->pass,$this->opt);
            $stmt =$pdo->prepare($quary);
-           $stmt->execute($execute)
+           $stmt->execute($execute);
 
         }
         public function get($quary){
